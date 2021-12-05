@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hamza.orderfood">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="39137a38e4b1511a1068895ef7e8e01d1834f143" />
+
+        <activity
+            android:name=".UserRegister"
+            android:label="@string/title_activity_user_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".list_single"
+            android:label="@string/title_activity_list_single"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listView"
+            android:label="@string/title_activity_list_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoadImages"
+            android:label="@string/title_activity_load_images"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowFoodItems"
+            android:label="@string/title_activity_show_food_items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowDeal"
+            android:label="@string/title_activity_show_deal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Verification"
+            android:label="@string/title_activity_verification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cart"
+            android:label="@string/title_activity_cart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Restaurant"
+            android:label="@string/title_activity_restaurant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".getRestaurants"
+            android:label="@string/title_activity_get_restaurants"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Orders"
+            android:label="@string/title_activity_orders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PhoneVerify"
+            android:label="@string/title_activity_phone_verify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".categorie"
+            android:label="@string/title_activity_categorie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserVerification"
+            android:label="@string/title_activity_user_verification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RestaurantEnd"
+            android:label="@string/title_activity_restaurant_end"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Restaurant_Orders"
+            android:label="@string/title_activity_restaurant__orders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".toolbar_tool"
+            android:label="@string/title_activity_toolbar_tool"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
